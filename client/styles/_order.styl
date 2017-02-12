@@ -1,0 +1,91 @@
+@import '_form.styl'
+
+.order-wrap
+  display flex
+  margin 10px auto
+  width 700px
+  height 589px
+  background #fff
+  border-radius 5px
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.07)
+
+.order-payment
+  width 400px
+  padding 0 25px 0 40px
+
+.order-summary
+  width 300px
+  background-color rgba(230,233,240,.5)
+
+.billing-link
+  display flex
+  margin 15px 0 25px 0
+  color purple
+  font 300 12px/1  'Helvetica Neue', sans-serif
+  &:focus
+    outline none
+  span
+    align-self flex-end
+
+//-------------------------order step
+.order-step
+  padding-top 20px
+
+.order-step__list
+  margin 0
+  padding 0
+  list-style none
+  > li
+    position relative
+    display inline-block
+    margin-right 12px
+    padding-right 22px
+    &:after
+      content ''
+      position absolute
+      z-index 1
+      top 0
+      right 0
+      display block
+      width 10px
+      height 20px
+      background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAoCAYAAAD6xArmAAAAAXNSR0IArs4c6QAAA4tJREFUSA2tl01LG1EUhpsxE/OhSWMRIqQEu0gWCpVWa2I3FfobBFFExC8UBP+BvyALFxoRXIhu/AGuu2kTaxrswkVEWsSAhdqmNo1JY0z6vkNuq2SSzEx64HrPzL33mddzP86N6QEsHA7b7Hb7a7h5k8n0dm5u7prvmzGJg5eXl/OSJH2Day2Xy6H9/f3WZqAcq4ChErzyIZ6vUOxnZ2eheDwus4NRM90duLq62gobwkfa8LG03++PDQ8PF+/20eorikXnpaWl39lsNoaw5AB3J5PJAdT3+oi+jep7ikXn7e1tRy6XewloKz7yZWZmJs5wiXYttaqaiYmJrMPhiAFwUyqVPJFIpA8fURVR6yOqYHYeHx//2d7efgD3Fmq9gPfUgqi9rwlm57GxsbTFYjkEuITSvba2FlCDqL2rC+aAqampr6gS9BFvP+BP6DeyhmACsBMvoPyIPuA9W1tbj+nXM01gAqD8HBN5TL9QKPRtbGx00a9lmsEELCwsfAL8hD7q51DeSV/NdC0hAVhfX+/lZOL51mw2x6anp7+LNlHrUiwGzc/PHyPW53huKRaLL3Z2dpyiTdSGwFBbxm78CMgFipzJZELcrQLK2hCYAwnHauEyvIRvyefzob29PRvbaIbBHAxgKRAIcAOlMZm2dDod5AmptPFPs8azO5FIDAHOWF/hQ9GmFAtB/f39N16vNwZwDu9cOLBe/Rew+ACWnnCbi7GgMBSpVCrIOOMdQ/GmRTQarVdWVsxYbkH8+w8B/IXtHltcXCw0BQZMOj09HYDSR9gwObfbHcWZkqfIf0HRKZkZBQfRMwzrhF+wWq3RkZERTp5ihsCEbm5uPgWhC2qLTqczioyTrTCVylAoPB5PL0b7UG5lWT6YnJz8cRdKX7dipidMUjdUl3EHOURMq042gnWtY6YlTJJfGShJHyppi49Vplkx0xGWkpKpmaYA5clW0zQpZhpiOiIFk3UMKM/iutYQXEk/XFaEnjA91SVWGuuCd3d33VCq3N8wV58BTWqBsk9NMNMNtuog+rQAmmI60gplP9XJY5rBrTOIdhmrgJfCIywxXZfCqg3Cnw2A8Y5sBfhydnaWGUIXtEpx5eKtHH+A8eKt3NvYUa/9DQWWlAyVgyhtKJmOjo73Rm/zFKFMHkAQaBrAswvl2ufz8aQqsINRU2LscrlsSCs8WPhz7N3o6KhyphqFctwfUO5t0b7ksLkAAAAASUVORK5CYII=')
+      background-size 10px 20px
+  > li:last-child
+    margin 0
+    padding 0
+    &:after
+      display none
+
+
+.order-step__item
+  color #979797
+  font 300 12px/20px  'Helvetica Neue', sans-serif
+  &.is-active
+    color purple
+  &.done
+    text-decoration underline
+
+//-------------------------order success
+.app-success
+  padding-top 45px
+  font-size 16px
+  .form-title
+    margin-bottom 32px
+
+.text-order
+  margin 8px 0
+  font 300 16px/1  'Helvetica Neue', sans-serif
+
+.text-estimated
+  margin 25px 0 30px 0
+
+.success-email
+  color purple
+  font 300 16px/1  'Helvetica Neue', sans-serif
+  text-decoration underline
+
+.print-recipe
+  color purple
+  font 300 13px/1  'Helvetica Neue', sans-serif
+  text-decoration underline

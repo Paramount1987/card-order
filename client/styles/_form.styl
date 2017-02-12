@@ -1,0 +1,110 @@
+.form-title
+  margin 20px 0
+  color purple
+  font normal 26px/1  'Helvetica Neue', sans-serif
+
+.form-title--sm
+  margin 18px 0 8px 0
+
+.flexbox-title
+  display flex
+  justify-content space-between
+
+.form-group__title
+  margin 10px 0 7px 0
+  font normal 16px/16px  'Helvetica Neue', sans-serif
+  color purple
+
+.form-group
+  width 320px
+  margin-bottom 30px
+
+.form-group--sm
+  margin-bottom 15px
+
+.form-group:last-of-type
+  margin-bottom 10px
+
+.form-group__flexbox
+  display flex
+  .form-group
+    width 105px
+    margin 0 0 0 20px
+    &:first-child
+      margin-left 0
+    .form-group__input
+      width 95px
+
+.form-group__input
+  margin-bottom 10px
+
+.form-group__input--flexbox
+  display flex
+  justify-content space-between
+
+.input-item
+  display inline-block
+  width 100%
+  height 40px
+  padding 0 15px
+  border-radius 5px
+  border solid 1px #dedcdc
+  font normal 16px/40px  'Helvetica Neue', sans-serif
+  text-align: left;
+  color: #000;
+  outline none
+  &.empty
+    background-color rgba(247, 231, 27, 0.07);
+  &:focus
+    border: solid 1px rgba(90, 16, 148, 0.35)
+    box-shadow  0 2px 18px 0 rgba(0, 0, 0, 0.07)
+
+
+.input-item::-webkit-input-placeholder{
+  color #6b6b6b
+}
+
+.input-item--short
+  width 180px
+
+.input-item--shorter
+  width 120px
+
+.input-desc
+  display flex
+  width 130px
+  height 40px
+  font normal 13px/1  'Helvetica Neue', sans-serif
+  color #777879
+
+.input-desc__inner
+  align-self center
+
+.form-btn
+  margin 20px 0
+  width 180px
+  height 45px
+  border none
+  border-radius 5px
+  background-color purple
+  color #fff
+  font normal 16px/45px  'Helvetica Neue', sans-serif
+  text-align center
+  outline 0
+
+.form-text
+  color #6b6b6b
+  font normal 15px/19px  'Helvetica Neue', sans-serif
+
+.form-text--sm
+  margin 8px 0 25px 0
+
+.i-secure
+  position relative
+  top 8px
+  display inline-block
+  margin-right 2px
+  width 19px
+  height 26px
+  background url('data:image/png;base64,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')
+  background-size 19px 26px
